@@ -142,10 +142,15 @@ const quizSettings = {
   
   // Define function to check the user's answer
   function checkAnswer(userAnswer, correctAnswer) {
+
+  }
     if (userAnswer === correctAnswer) {
       feedbackText.textContent = "Correct!";
       score++;
     } else {
+      
+    }
+    
       feedbackText.textContent = "Wrong!";
       timeLeft -= quizSettings.penalty;
       if (timeLeft < 0) {
